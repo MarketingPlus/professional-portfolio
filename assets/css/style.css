@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+:root {
+  /* ================ DEFAULT COLOURS ==================== */
+  --main-color: #445876;
+  --first-color: #2b2e36;
+  --second-color: #90c9cb;
+  --third-color: #31343d;
+  --forth-color: #91cccd;
+
+  /* =============== DEFAULT FONT SIZE =================== */
+  --p--font: 0.5rem;
+  --one-font: 3rem;
+  --two-font: 2rem;
+  --three-font: 1rem;
+  --four-font: 0.75rem;
+}
+
+/* =============== UNIVERSAL STYLING =================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ================ NAVIGATION BAR ===================== */
+
+.navbar {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__title {
+  font-size: var(--one-font);
+  margin-left: 100;
+  color: var(--first-color);
+  background-color: var(--second-color);
+  padding: 0.5rem 0.5rem 0.5rem 10rem;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
+
+.nav__links li {
+  font-size: var(--two-font);
+  color: var(--second-color);
+  padding-right: 1rem;
+}
+
+.nav__links li a {
+  text-decoration: none;
+  color: var(--second-color);
+  border-bottom: 5px solid var(--second-color);
+  transition: 0.3s linear;
+}
+
+.nav__links li a:hover {
+  background-color: var(--second-color);
+  color: var(--first-color);
+  padding: 0.5rem;
+}
