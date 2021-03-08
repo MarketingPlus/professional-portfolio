@@ -7,6 +7,7 @@
   --second-color: #90c9cb;
   --third-color: #31343d;
   --forth-color: #91cccd;
+  --p-colour: #6e83a3;
 
   /* =============== DEFAULT FONT SIZE =================== */
   --p--font: 0.5rem;
@@ -102,4 +103,202 @@ html {
   padding: 1rem;
 }
 
-/* =========== MAIN PHOTO ================= */
+/* =========== ABOUT SECTION ================= */
+
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex: row;
+}
+
+.about__container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 3rem;
+}
+
+.about__title {
+  font-size: var(--one-font);
+  color: var(--main-color);
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.about__title h3 {
+  margin-top: 0px;
+}
+
+.about__content p {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: var(--three--font);
+  color: var(--p-colour);
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  position: relative;
+  align-items: flex-start;
+}
+
+.about__content {
+  margin: 0;
+  display: flex;
+}
+
+.line__spacer {
+  width: 6px;
+  height: inherit;
+  background-color: var(--main-color);
+  margin: 5px;
+  display: flex;
+  position: relative;
+  display: flex;
+}
+
+/* =========== ABOUT SECTION ================= */
+
+.work {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex: row;
+}
+
+.work__container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 3rem;
+}
+
+.work__title {
+  font-size: var(--one-font);
+  color: var(--main-color);
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.work__title h3 {
+  margin-top: 0px;
+}
+
+.work__wrapper {
+  margin: 0;
+  display: flex;
+}
+
+.work__content {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.line__spacer {
+  width: 6px;
+  height: inherit;
+  background-color: var(--main-color);
+  margin: 5px;
+  display: flex;
+  position: relative;
+}
+
+/* =========== CONTACT  SECTION ================= */
+
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex: row;
+}
+
+.contact__container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 3rem;
+}
+
+.contact__title {
+  font-size: var(--one-font);
+  color: var(--main-color);
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.contact__title h3 {
+  margin-top: 0px;
+  text-align: right;
+}
+
+.contact__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: var(--three--font);
+  color: var(--p-colour);
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  position: relative;
+  align-items: center;
+}
+
+.contant__content {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.line__spacer {
+  width: 6px;
+  height: 100%;
+  background-color: var(--main-color);
+  margin: 5px;
+  display: flex;
+  position: relative;
+  display: flex;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.links li {
+  font-size: var(--two-font);
+  color: #343640;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links li a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 5px solid var(--main-color);
+  transition: 0.3s linear;
+  padding: 0px;
+}
+
+.links li a:hover {
+  background-color: var(--main-color);
+  color: var(--first-color);
+}
