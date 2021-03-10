@@ -27,6 +27,7 @@ body,
 html {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 /* ================ NAVIGATION BAR ===================== */
@@ -108,7 +109,7 @@ html {
 .grid__container {
   display: grid;
   grid-template-columns: 0.5fr 2fr;
-  grid-template-rows: 1fr 3fr 2fr;
+  grid-template-rows: 0.5fr 3fr 0.5fr;
   gap: 2rem 1rem;
   grid-template-areas:
     ". ."
@@ -117,6 +118,7 @@ html {
   width: 80%;
   margin: auto;
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* =========== TITLES ================= */
@@ -233,6 +235,7 @@ html {
   left: 0;
   background-color: rgba(14, 91, 94, 0.2);
   transition: ease 0.4s;
+  cursor: pointer;
 }
 
 .colour__overlay:hover {
@@ -240,3 +243,30 @@ html {
 }
 
 /* =========== CONTACT - CONTENT ================= */
+
+.contact__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+}
+
+.contact__links li {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.contact__links a {
+  font-size: var(--three-font);
+  text-decoration: none;
+  color: var(--third-color);
+  border-bottom: 0.3rem solid var(--main-color);
+  padding: 0.2rem;
+}
