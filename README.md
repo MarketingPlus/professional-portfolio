@@ -6,7 +6,7 @@ I have created a portfolio to resemble the mockup image I have been given to the
 
 > This is not my official portfolio - you can find that linked down below in my portfolio section
 
-![SCREENSHOT](https://user-images.githubusercontent.com/77607177/110591331-0cebf080-81cd-11eb-9cab-09a8ef99ccfc.png)
+![SCREENSHOT](https://user-images.githubusercontent.com/77607177/110592256-2b062080-81ce-11eb-80ed-597a7af163de.png)
 
 > Here is a screenshot of the deployed application
 
