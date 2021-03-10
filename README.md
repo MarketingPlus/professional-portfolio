@@ -1,4 +1,4 @@
-# Benjamin Wilson's - Porfolio Replication Project✨
+# Benjamin Wilson's - Portfolio Replication Project✨
 
 ## Description 🤙
 
