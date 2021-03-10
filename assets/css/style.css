@@ -323,7 +323,6 @@ html {
 /* large laptops and large tablets */
 
 @media screen and (max-width: 1150px) {
-
   .navbar {
     display: flex;
     flex-direction: column;
@@ -368,13 +367,27 @@ html {
     flex-direction: column;
   }
 
+  .about__title h1,
+  .contact__title h1,
+  .work__title h1 {
+    margin: 0;
+  }
+
   .line__spacer {
     width: 100%;
     height: 0.4rem;
   }
 
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
   .about__content img {
-    width: 50%;
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
   }
 
   .contact__links {
@@ -383,7 +396,14 @@ html {
   }
 
   .contact__links li {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+  }
+
+  .text__overlay {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
   }
 }
 
@@ -407,14 +427,34 @@ html {
     margin-top: 3rem;
   }
 
-  .about__title,
-  .contact__title,
-  .work__title,
-  .work__content,
-  .about__content,
-  .contact__content {
-    width: 80%;
-    margin: auto;
+  .bottom__left {
+    position: absolute;
+    background-color: var(--second-color);
+    padding: 1rem;
+  }
+
+  .bottom__left h3 {
+    font-size: var(--four-font);
+  }
+
+  .bottom__left h4 {
+    font-weight: lighter;
+    font-size: var(--five--font);
+    margin-top: 1rem;
+  }
+
+  .contact__links a {
+    font-size: var(--three-font);
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact__links {
+    font-size: var(--three-font);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 /* small laptops and small tablets */
@@ -432,25 +472,42 @@ html {
   }
 
   .nav__title {
-    font-size: var(--four-font);
+    font-size: var(--three-font);
   }
   .nav__links li {
-    font-size: var(--five-font);
-  }
-
-  .text__overlay {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-right: 0;
+    font-size: var(--four-font);
   }
 
   .text__overlay h2 {
     font-size: var(--four-font);
+  }
+
+  .card {
+    width: 100%;
   }
 }
 
 /* mobile device screens */
 
 @media screen and (max-width: 576px) {
+  .about__content img {
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+  }
+
+  .bottom__left {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    background-color: rgba(144, 201, 203, 0.4);
+  }
+
+  .bottom__left h3,
+  .bottom__left h4 {
+    color: var(--third-color);
+    margin-top: 0;
+    background-color: white;
+  }
 }
