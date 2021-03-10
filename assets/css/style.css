@@ -66,13 +66,13 @@ html {
   text-decoration: none;
   color: var(--second-color);
   border-bottom: 5px solid var(--second-color);
+  padding: 0.5rem;
   transition: 0.3s linear;
 }
 
 .nav__links li a:hover {
   background-color: var(--second-color);
   color: var(--first-color);
-  padding: 0.5rem;
 }
 
 /* =========== MAIN PHOTO ================= */
@@ -161,6 +161,13 @@ html {
   font-weight: lighter;
 }
 
+.about__content img {
+  width: 300px;
+  border-radius: 10px;
+  border: 0.5rem solid var(--second-color);
+  margin: auto;
+}
+
 /* =========== WORK - CONTENT ================= */
 .work__container {
   display: grid;
@@ -185,6 +192,12 @@ html {
 .bigger__card img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.bigger__card a {
+  width: 100%;
+  height: 100%;
 }
 
 .card {
@@ -193,6 +206,12 @@ html {
 }
 
 .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card a {
   width: 100%;
   height: 100%;
 }
@@ -269,4 +288,37 @@ html {
   color: var(--third-color);
   border-bottom: 0.3rem solid var(--main-color);
   padding: 0.2rem;
+  transition: linear 0.3s;
+}
+
+.contact__links a:hover {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+
+/* =========== MEDIA QUERIES ================= */
+
+/* medium laptops and medium tablets */
+
+@media screen and (max-width: 992px) {
+  .nav__title {
+    font-size: var(--two-font);
+  }
+
+  .nav__links li {
+    font-size: var(--three-font);
+  }
+
+  .text__overlay h2 {
+  }
+}
+
+/* small laptops and small tablets */
+
+@media screen and (max-width: 768px) {
+}
+
+/* mobile device screens */
+
+@media screen and (max-width: 576px) {
 }
