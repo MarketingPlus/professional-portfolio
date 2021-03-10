@@ -102,3 +102,33 @@ html {
   font-size: var(--one-font);
   padding: 1rem;
 }
+
+/* =========== GRID CONTAINER  ================= */
+
+.grid__container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: 2fr 3fr 1fr;
+  gap: 0px 5px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+  width: 80%;
+  margin: auto;
+}
+
+/* =========== TITLES ================= */
+
+.about__title,
+.work__title,
+.contact__title {
+  font-size: var(--two-font);
+  color: var(--main-color);
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.line__spacer {
+}
