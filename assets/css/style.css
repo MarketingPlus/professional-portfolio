@@ -126,6 +126,8 @@ html {
   grid-template-areas:
     ". ."
     ". ."
+    ". ."
+    ". ."
     ". .";
   width: 80vw;
   margin: auto;
@@ -203,7 +205,9 @@ html {
 
 .grid__1,
 .grid__2,
-.grid__3 {
+.grid__3,
+.grid__4,
+.grid__5 {
   display: flex;
 }
 
@@ -253,6 +257,11 @@ html {
   left: 0px;
   background-color: var(--second-color);
   padding: 1rem;
+}
+
+.bottom__left img {
+  width: 24px;
+  height: 24px;
 }
 
 /* styling header elements */
